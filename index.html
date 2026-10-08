@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marwa Halli — AI, Intelligent AI & Data Solutions</title>
+  <meta name="description" content="Marwa Halli — AI, Data & Intelligent Systems portfolio. Machine Learning, Computer Vision, RAG / LLM applications and practical AI systems.">
+  <meta property="og:title" content="Marwa Halli — Intelligent AI & Data Solutions">
+  <meta property="og:description" content="AI, Data & Intelligent Systems portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress"><span id="progressBar"></span></div>
+<div class="bg-orb orb-cyan"></div><div class="bg-orb orb-purple"></div><div class="grid-bg"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner container">
+    <a class="brand" href="#home" aria-label="Marwa Halli home">
+      <span class="brand-mark"><i data-lucide="rocket"></i></span>
+      <span><strong>Marwa <em>Halli</em></strong><small>AI · DATA · INTELLIGENT SYSTEMS</small></span>
+    </a>
+    <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+      <a href="#home" class="nav-link active">Home</a><a href="#about" class="nav-link">About</a><a href="#skills" class="nav-link">Skills</a><a href="#projects" class="nav-link">Projects</a><a href="#experience" class="nav-link">Experience</a><a href="#education" class="nav-link">Education</a><a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" data-site-link="linkedin" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i></a>
+      <a href="#contact" class="btn btn-gradient nav-cta"><i data-lucide="briefcase"></i><span>Contact<br>Me</span></a>
+      <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <div class="status-pill"><span></span><span data-bind="hero.status"></span></div>
+      <h1>Intelligent AI &amp; Data<br><span class="gradient-text shimmer">Solutions</span></h1>
+      <p class="lead" data-html="hero.lead">I build intelligent solutions by combining Artificial Intelligence, data, and emerging technologies to address real-world challenges.
+</p>
+      <div class="info-chips">
+        <span><i data-lucide="map-pin"></i><span data-bind="site.location"></span></span>
+        <a data-site-link="phone"><i data-lucide="phone"></i><span data-bind="site.phone"></span></a>
+        <a data-site-link="email"><i data-lucide="mail"></i><span data-bind="site.email"></span></a>
+      </div>
+      <div class="tech-chips" id="heroTech"></div>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-gradient"><i data-lucide="briefcase"></i>Contact Me <i class="arrow" data-lucide="arrow-right"></i></a>
+        <a data-site-link="cv" class="btn btn-outline purple" download><i data-lucide="book-open"></i>Download CV <i data-lucide="download"></i></a>
+        <a href="#projects" class="btn btn-dark"><i data-lucide="sparkles"></i>View Projects</a>
+      </div>
+    </div>
+
+    <div class="terminal-wrap reveal">
+      <div class="terminal glass">
+        <div class="terminal-head">
+          <img src="assets/images/profile.jpg"  class="avatar-sm">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <div class="terminal-title"><b>&gt;_ marwa_halli.py</b><small>AI · Data · Intelligent Systems</small></div>
+          <span class="mini-badge green">AI PROFILE</span>
+        </div>
+        <div class="divider"></div>
+        <div class="code-panel" id="codePanel" aria-label="AI profile code"></div>
+        <div class="terminal-cards">
+          <a href="#projects" class="mini-card"><span class="dot cyan"></span><span><b>ProjectX AI Regions MVP</b><small>Multi-region AI platform with strict data isolation</small></span></a>
+          <a href="#experience" class="mini-card"><span class="dot purple"></span><span><b>Highness Internship</b><small>AI Developer Intern — AI services &amp; benchmarking</small></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-badge"><i data-lucide="award"></i>Profile &amp; Philosophy</span><h2>About <span class="gradient-text">Me</span></h2><p>A concise view of my academic path, practical AI direction and professional profile.</p></div>
+    <div class="about-grid">
+      <div class="about-profile reveal">
+        <div class="profile-ring"><img src="assets/images/profile.jpg" ><span>#AI</span></div>
+        <h3>Marwa Halli</h3><p class="gradient-text about-role">AI Profile </p><p class="mono"><i data-lucide="map-pin"></i> Kénitra, Morocco</p>
+        <div class="about-buttons"><a class="btn btn-outline" data-site-link="linkedin" target="_blank" rel="noreferrer">View LinkedIn ↗</a><a class="btn btn-gradient" data-site-link="cv" download>Download CV</a><a class="icon-btn" data-site-link="github" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a></div>
+      </div>
+      <div class="about-content reveal">
+        <blockquote id="aboutStatement"></blockquote>
+        <p id="aboutSummary" class="muted"></p>
+        <div class="subhead"><i data-lucide="award"></i> CERTIFICATIONS</div>
+        <div class="cert-grid" id="certGrid"></div>
+        <div class="subhead"><i data-lucide="languages"></i> LANGUAGES</div>
+        <div class="language-chips" id="languageChips"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section section-soft">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-badge"><i data-lucide="zap"></i>Skills &amp; Domains</span><h2>My Areas of <span class="gradient-text">Expertise</span></h2><p>Core technologies and concepts across AI, data, systems, IoT and practical computing.</p></div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-badge"><i data-lucide="sparkles"></i>Featured AI Projects</span><h2>Professional <span class="gradient-text">AI Projects</span></h2><p>Completed during my AI Developer internship at Highness</p></div>
+    <div class="featured-selectors" id="featuredSelectors"></div>
+    <div class="project-detail glass reveal" id="projectDetail"></div>
+    <div class="subsection-head reveal"><span class="section-badge"><i data-lucide="layers"></i>More Projects</span><h3>Other <span class="gradient-text">Projects</span></h3></div>
+    <div class="filter-tabs" id="filterTabs">
+      <button class="active" data-filter="all">All projects (6)</button><button data-filter="AI & Vision">AI &amp; Vision</button><button data-filter="IoT & Embedded">IoT &amp; Embedded</button><button data-filter="Web & Systems">Web &amp; Systems</button>
+    </div>
+    <div class="other-grid" id="otherGrid"></div>
+  </div>
+</section>
+
+<section id="experience" class="section section-soft">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-badge"><i data-lucide="briefcase"></i>Professional Experience</span><h2>Where I Have <span class="gradient-text">Worked</span></h2><p>Practical experience across AI development, intelligent access systems and web applications.</p></div>
+    <div class="timeline" id="experienceTimeline"></div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-badge"><i data-lucide="award"></i>Education</span><h2>My <span class="gradient-text">Academic Path</span></h2><p>Academic foundations in Artificial Intelligence and Applied Computer Science.</p></div>
+    <div class="timeline" id="educationTimeline"></div>
+  </div>
+</section>
+
+<section id="contact" class="section section-soft">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-badge"><i data-lucide="briefcase"></i>Contact &amp; Opportunities</span><h2>Let's Talk About <span class="gradient-text">AI, Data &amp; Opportunities</span></h2><p>Reach me by message, phone, LinkedIn or GitHub.</p></div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="glass linkedin-card reveal"><span class="contact-icon"><i data-lucide="linkedin"></i></span><h3>Marwa Halli on LinkedIn</h3><p>Connect with me and explore my professional profile.</p><a class="btn btn-gradient" data-site-link="linkedin" target="_blank" rel="noreferrer">View my LinkedIn ↗</a></div>
+        <div class="glass direct-card reveal"><div class="subhead">DIRECT CONTACT</div><div id="contactRows"></div></div>
+      </div>
+      <form class="glass contact-form reveal" id="contactForm" novalidate>
+        <h3>Contact Form</h3>
+        <div class="form-grid">
+          <label>Full name*<input name="name" required placeholder="Your full name"></label>
+          <label>Professional email*<input type="email" name="email" required placeholder="name@company.com"></label>
+          <label class="full">Company / Organization<input name="company" placeholder="Company or organization"></label>
+          <label class="full">Type of opportunity*<select name="opportunity" required><option value="">Select one</option><option>Internship</option><option>Job offer</option><option>Project / Collaboration</option><option>Other</option></select></label>
+          <label class="full">Message*<textarea name="message" required rows="6" placeholder="Tell me about the opportunity..."></textarea></label>
+        </div>
+        <button class="btn btn-gradient full-submit" type="submit">Send Message <i data-lucide="arrow-right"></i></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><span>© 2026 Marwa Halli</span><div class="footer-links"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><div class="socials"><a data-site-link="linkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a><a data-site-link="github" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a><a data-site-link="email" aria-label="Email"><i data-lucide="mail"></i></a></div></div></footer>
+<button class="back-top" id="backTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+<div class="modal" id="projectModal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-dialog glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close"><i data-lucide="x"></i></button><div id="modalContent"></div></div></div>
+<script src="js/data.js"></script><script src="js/main.js"></script>
+</body>
+</html>
